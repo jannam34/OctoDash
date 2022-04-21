@@ -666,7 +666,7 @@ text_input() {
 
 ################## INQUIRER.SH ##################
 
-
+: <<'END'
 
 arch=$(uname -m)
 if [[ $arch == x86_64 ]]; then
@@ -844,3 +844,5 @@ echo "OctoDash has been successfully installed! :)"
 if [ $reboot == 'yes' ]; then
     sudo reboot
 fi
+
+END
